@@ -14,6 +14,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PdfViewActivity" />
         </activity>
+        <activity android:name=".QuizActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".QuizActivity" />
+        </activity>
+        <activity android:name=".QuizResultActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".QuizResultActivity" />
+        </activity>
+        <activity android:name=".QuizResultAnalysisActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".QuizResultAnalysisActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

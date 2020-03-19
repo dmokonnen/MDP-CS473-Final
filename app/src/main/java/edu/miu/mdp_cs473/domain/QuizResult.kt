@@ -10,7 +10,7 @@ data class QuizResult(val question: String, val selectedAnswer: String, val corr
     constructor(quiz: Quiz, selectedAnswer: String) : this(
         quiz.question,
         selectedAnswer,
-        arrayOf(quiz.answer1, quiz.answer2, quiz.answer3)[quiz.correctAnswer]
+        arrayOf(quiz.answer1, quiz.answer2, quiz.answer3,quiz.answer4)[quiz.correctAnswer]
     )
 
 }
