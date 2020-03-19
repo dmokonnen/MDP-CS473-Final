@@ -1,0 +1,122 @@
+[
+  {
+    "question": "1.Which company developed android?",
+    "answer1": "Apple",
+    "answer2": "Google",
+    "answer3": "Android Inc.",
+    "answer4": "Nokia",
+    "correctAnswer": 2
+  },
+  {
+    "question": "2. Which company bought android?",
+    "answer1": "Apple",
+    "answer2": "No Company",
+    "answer3": "Nokia",
+    "answer4": "Google",
+    "correctAnswer": 3
+  },
+  {
+    "question": "3. Web browser available in android is based on",
+    "answer1": "Chrome",
+    "answer2": "Firefox",
+    "answer3": "Open-source Webkit",
+    "answer4": "Opera",
+    "correctAnswer": 2
+  },
+  {
+    "question": "4. Android is based on which kernel?",
+    "answer1": "Linux Kernel",
+    "answer2": "Windows Kernel",
+    "answer3": "MAC Kernel",
+    "answer4": "Hybrid Kernel",
+    "correctAnswer": 0
+  },
+  {
+    "question": "5. Android is based on which language",
+    "answer1": "C",
+    "answer2": "C++",
+    "answer3": "Kotlin",
+    "answer4": "C#",
+    "correctAnswer": 2
+  },
+  {
+    "question": "6.  If you want to increase the whitespace between widgets, you will need to use the ____________ property",
+    "answer1": "Android:padding",
+    "answer2": "Android:digits",
+    "answer3": "Android:capitalize",
+    "answer4": "Android:autoText",
+    "correctAnswer": 0
+  },
+  {
+    "question": "7. Which of the following Dialog boxes are supported by Android? 1) AlertDialog 2) ProgressDialog 3) DatePickerDialog 4) TimePickerDialog",
+    "answer1": "1 and 2",
+    "answer2": "3 and 4",
+    "answer3": "all of the above",
+    "answer4": "none of the above",
+    "correctAnswer": 2
+  },
+  {
+    "question": "8. Using a content provider, which of the following operations are able to perform? 1) create 2) read 3) update 4) delete",
+    "answer1": "1,2,3",
+    "answer2": "2,3,4",
+    "answer3": "all of the above",
+    "answer4": "none of the above",
+    "correctAnswer": 1
+  },
+  {
+    "question": "9. Which of the following are different storage methods available in Android? 1) Shared Preferences 2) Internal Storage 3) External Storage 4) SQLite Databases 5) Network Connection 6)Intermediate storage",
+    "answer1": "1,2,3,4,6",
+    "answer2": "2,3,4,5,6",
+    "answer3": "1,2,3,4,5",
+    "answer4": "all",
+    "correctAnswer": 3
+  },
+  {
+    "question": "10. In ___________, sender specifies type of receiver.",
+    "answer1": "implicit intent",
+    "answer2": "explicit intent",
+    "answer3": "both",
+    "answer4": "none",
+    "correctAnswer": 1
+  },
+  {
+    "question": "11. Which of the following(s) is/are component of APK file?",
+    "answer1": "Resources",
+    "answer2": "Delvik Executable",
+    "answer3": "both",
+    "answer4": "none",
+    "correctAnswer": 2
+  },
+  {
+    "question": "12. Which of the following don’t have any UI component and run as a background process?",
+    "answer1": "Services",
+    "answer2": "simulator",
+    "answer3": "Emulator",
+    "answer4": "none",
+    "correctAnswer": 0
+  },
+  {
+    "question": "13. What are the layouts available in android?",
+    "answer1": "LinearLayout",
+    "answer2": "FrameLayout",
+    "answer3": "TableLayout",
+    "answer4": "all",
+    "correctAnswer": 3
+  },
+  {
+    "question": "14. How to store heavy structured data in android?",
+    "answer1": "SharedPreferences",
+    "answer2": "Cursor",
+    "answer3": "SQLite database",
+    "answer4": "Not possible",
+    "correctAnswer": 2
+  },
+  {
+    "question": "15. Is it mandatory to call onCreate() and onStart() in android?",
+    "answer1": "No, we can write the program without writing onCreate() and onStart()",
+    "answer2": "Yes, we should call onCreate() and onStart() to write the program",
+    "answer3": "At least we need to call onCreate() once",
+    "answer4": "none",
+    "correctAnswer": 2
+  }
+]

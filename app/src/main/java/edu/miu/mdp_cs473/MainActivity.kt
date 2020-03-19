@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.View
 import androidx.appcompat.view.menu.MenuBuilder
+import androidx.core.view.get
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,11 +19,15 @@ class MainActivity : AppCompatActivity() {
         val adapter=ViewPagerAdapter(supportFragmentManager)
         //adapter.addFragment(HomeFragment(),"Home")
         adapter.addFragment(CourseInfoFragment(),"Course Info")
-        adapter.addFragment(LecturesFragment(),"Lectures")
+        adapter.addFragment(Lectures2Fragment(),"Lectures")
         adapter.addFragment(AssignmentsFragment(),"Assignments")
         adapter.addFragment(QuizFragment(),"Quiz")
         viewPager.adapter=adapter
         tabs.setupWithViewPager(viewPager)
+        tabs.getTabAt(0)?.setIcon(R.drawable.ic_description)
+        tabs.getTabAt(1)?.setIcon(R.drawable.lecture)
+        tabs.getTabAt(2)?.setIcon(R.drawable.ic_assignment)
+        tabs.getTabAt(3)?.setIcon(R.drawable.quiz)
     }
 
     fun go(view: View) {
