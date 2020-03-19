@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(intent))
     }
 
-    fun takequiz(view: View) {
+    fun takeQuiz(view: View) {
         val intent = Intent(this, QuizActivity::class.java)
         startActivity(Intent(intent))
     }

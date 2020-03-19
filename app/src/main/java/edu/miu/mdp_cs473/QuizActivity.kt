@@ -24,7 +24,10 @@ class QuizActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
-        setupUI()
+        val json = inputStreamToString(resources.openRawResource(R.raw.quiz))
+        quizzes = Gson().fromJson(json, Array<Quiz>::class.java)
+        answers = Array(quizzes.size) { null }
+        showQuiz(0)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -40,14 +43,6 @@ class QuizActivity : AppCompatActivity() {
         showQuiz(0)
     }
 
-    private fun setupUI() {
-
-        val json = inputStreamToString(resources.openRawResource(R.raw.quiz))
-        quizzes = Gson().fromJson(json, Array<Quiz>::class.java)
-        answers = Array(quizzes.size) { null }
-        showQuiz(0)
-    }
-
     private fun showQuiz(index: Int) {
         val quiz = quizzes[index]
         answer_radio_group.clearCheck()
@@ -56,7 +51,6 @@ class QuizActivity : AppCompatActivity() {
         answer_2_radio_button.text = quiz.answer2
         answer_3_radio_button.text = quiz.answer3
         answer_4_radio_button.text = quiz.answer4
-        //answer_1_radio_button.isChecked = true
     }
 
     fun nextButtonClicked(view: View) {
@@ -81,16 +75,8 @@ class QuizActivity : AppCompatActivity() {
     }
 
     fun homeButtonClicked(view: View) {
-        if (currentQuizIndex < quizzes.size - 1) {
-            currentQuizIndex++
-            showQuiz(currentQuizIndex)
-        } else {
-            val intent = Intent(this, QuizResultActivity::class.java)
-            val arrayList = arrayListOf<QuizResult>()
-            arrayList.addAll(answers.filterNotNull())
-            intent.putParcelableArrayListExtra("result", arrayList)
-            startActivityForResult(intent, SHOW_RESULT_ACTIVITY_RESULT_CODE)
-        }
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 
     companion object {
